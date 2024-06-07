@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+import { useState } from 'react';
+import Task from './Components/Task';
+import TaskForm from './Components/TaskForm';
 
 function App() {
 
+  const [tasks, setTasks] = useState([]);
+
   return (
-    <>
-      <h1> Hello World</h1>
-    </>
+    <main>
+      <TaskForm></TaskForm>
+      <Task></Task>
+    </main>
   )
 }
 
-export default App
+export default App;
